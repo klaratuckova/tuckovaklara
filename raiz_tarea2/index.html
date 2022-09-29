@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <title>Rollover con svg</title>
+
+    <style>
+        body{
+          margin: 0;
+          background-color: black;
+
+          font-family: 'Inter', sans-serif;
+        }
+    </style>
+
+</head>
+<body>
+
+    <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+        <image xlink:href="./img/earth.jpg" style="width: 500px;"/>
+
+        <g id="globo" style="display: none;">
+            <rect fill="#fff" stroke="#fff" x="293" y="34" width="249" height="147" id="svg_1" rx="80"/>
+            <path fill="#fff" stroke="#fff" opacity="NaN" d="m379,155c-1,3 -112,121 -112,121c0,0 150,-106 150,-106c0,0 -37,-18 -38,-15z" id="svg_2"/>
+            <text fill="#000" x="332.97744" y="111.8106" id="svg_3" stroke-width="0" font-size="24" font-family="'Inter'" text-anchor="start" xml:space="preserve" stroke="#000" transform="matrix(0.772677 0 0 0.772677 71.4731 27.1959)">Is anybody here?</text>
+        </g>
+
+        <g id="texto" style="cursor: pointer; background-color:none;">
+            <rect x="40" y="285" width="200" height="38" stroke="null" fill="none"/>    
+            <text x="48" y="312" style="white-space: pre; fill: white; font-size: 28px;">¡Hola, Mundo!</text>
+        </g>
+       
+       <animate 
+           xlink:href="#globo"
+           fill="freeze" 
+           dur="0.2s" 
+           begin="texto.mouseover"
+           attributeName="display"
+           from="none" 
+           to="block" 
+       />
+       
+       <animate 
+           xlink:href="#globo"
+           fill="freeze" 
+           dur="0.5s" 
+           begin="texto.mouseout"
+           attributeName="display"
+           from="block" 
+           to="none" 
+       />
+       
+       </svg>
+    
+</body>
+</html>
