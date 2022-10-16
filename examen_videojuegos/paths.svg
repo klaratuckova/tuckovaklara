@@ -1,0 +1,144 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 700 700" style="enable-background:new 0 0 700 700;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:none;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#none;stroke-miterlimit:10;}
+</style>
+<path id="p_jitomate" class="st0" d="M245.4,254.1c-5-43,58-114,98-103s57,31,79,64s65,22,94,22s46,23,43,58s-6,96-40,101s-71-12-54,37s67,71,11,76
+	s-73-2-91-25s-15-74,2-124s6-95-14-85s-57,60-61,84s-5,76,9,106s38,86-7,85s-73,1-97-14s-56-38-64-69s-22-69-5-101s35-36,58-39
+	s40-20,41-40S245.4,254.1,245.4,254.1z"/>
+<path id="p_aceitunas" class="st1" d="M213.8,253c-6.6-84.9,51-165.4,70.4-160.8c20,4.7-8.6,97.9,45.2,143.2c1.6,1.4,34.5,28.3,61.6,17.6
+	c42.5-16.8,28-109.3,50.3-113.1c20.4-3.5,69.1,67.5,49,114.3c-28.7,66.8-177.6,37.9-187.2,81.7c-6.7,30.2,54.9,86.8,118.1,86.7
+	c99.1-0.1,162.9-139.1,188.5-124.4c17.7,10.2-6.3,80.8-12.6,99.3c-20.8,61.2-49.6,145.9-109.3,150.8c-40.6,3.3-87.8-31-98-71.6
+	c-13.9-55.2,46.8-97.3,31.4-118.1c-16.9-22.9-112.6-2.4-178.4,57.8c-50.6,46.3-56.1,90.9-81.7,89.2c-32.5-2.2-68.5-77.3-46.5-116.8
+	c21.2-38.1,84.2-21.4,104.3-62.8C229.5,303.9,216.6,289.4,213.8,253z"/>
+<path id="p_pina" class="st1" d="M165.5,225.5c9-57,84,35,119,32s89-106,99-118s194,5,194,49s-62,103-62,136s99,160,99,160l-165-12l16-131
+	c0,0-42,225-134,223s-68-66-66-116s13-96,13-128S165.5,225.5,165.5,225.5z"/>
+<path class="st1" d="M146.5,291.5c-47-79-107-77-23-128s202-142,263-101s76,111,78,151s-30,112-13,137s119.3,22.5,145.2,55.8
+	s20.8,106.2-15.2,135.2s-158,74-225,72s-139-89-139-130s1-62,10-109s89-51,96-93S146.5,291.5,146.5,291.5z"/>
+<path id="p_salami" class="st1" d="M133.5,336.5c0,0,35-163,39-163s173,97,173,97l70,15l-55-181l123,218l53,129l-192,4l7,184l-65-186
+	c0,0-110-34-113-40S133.5,336.5,133.5,336.5z"/>
+<path id="p_champinones" class="st1" d="M127.5,199.5c19-36,134-5,154,10s299,6,301,41s-149,115-171,76s-1-221-32-231s-71,401-108,409s-196,97-139,125
+	s319,67,346,20s-10-50-44-78s-227-173-253-190s-59-176-59-176"/>
+
+
+  <image xlink:href="img/pizza.png"/>
+
+<image xlink:href="./img/jitomate.png" width="100" height="100" x="-50" y="-50">
+    <animateMotion dur="8s" repeatCount="indefinite">
+        <mpath xlink:href="#p_jitomate"/>
+    </animateMotion>
+</image>
+
+<image xlink:href="./img/jitomate.png" width="100" height="100" x="-50" y="-50">
+    <animateMotion dur="5s" repeatCount="indefinite">
+        <mpath xlink:href="#p_aceitunas"/>
+    </animateMotion>
+</image>
+
+<image xlink:href="./img/champinon.png" width="80" height="80" x="-40" y="-40">
+    <animateMotion dur="6s" repeatCount="indefinite">
+        <mpath xlink:href="#p_champinones"/>
+    </animateMotion>
+</image>
+
+<image xlink:href="./img/champinon.png" width="80" height="80" x="-40" y="-40">
+    <animateMotion dur="13s" repeatCount="indefinite">
+        <mpath xlink:href="#p_jitomate"/>
+    </animateMotion>
+</image>
+
+<image xlink:href="./img/pina.png" width="120" height="120" x="-60" y="-60">
+    <animateMotion dur="8s" repeatCount="indefinite">
+        <mpath xlink:href="#p_pina"/>
+    </animateMotion>
+</image>
+
+<image xlink:href="./img/pina.png" width="120" height="120" x="-60" y="-60">
+    <animateMotion dur="6s" repeatCount="indefinite">
+        <mpath xlink:href="#p_aceitunas"/>
+    </animateMotion>
+</image>
+
+<image xlink:href="./img/salami.png" width="90" height="90" x="-45" y="-45">
+    <animateMotion dur="6s" repeatCount="indefinite">
+        <mpath xlink:href="#p_salami"/>
+    </animateMotion>
+</image>
+
+<image xlink:href="./img/salami.png" width="90" height="90" x="-45" y="-45">
+    <animateMotion dur="12s" repeatCount="indefinite">
+        <mpath xlink:href="#p_aceitunas"/>
+    </animateMotion>
+</image>
+
+<image xlink:href="./img/salami.png" width="90" height="90" x="-45" y="-45">
+    <animateMotion dur="18s" repeatCount="indefinite">
+        <mpath xlink:href="#p_pina"/>
+    </animateMotion>
+</image>
+
+<image xlink:href="./img/salami.png" width="90" height="90" x="-45" y="-45">
+    <animateMotion dur="8s" repeatCount="indefinite">
+        <mpath xlink:href="#p_champinones"/>
+    </animateMotion>
+</image>
+
+
+<image xlink:href="./img/aceitunas.png" width="40" height="40" x="-20" y="-20">
+    <animateMotion dur="8s" repeatCount="indefinite">
+        <mpath xlink:href="#p_aceitunas"/>
+    </animateMotion>
+</image>
+
+<image xlink:href="./img/aceitunas.png" width="40" height="40" x="-20" y="-20">
+    <animateMotion dur="10s" repeatCount="indefinite">
+        <mpath xlink:href="#p_champinones"/>
+    </animateMotion>
+</image>
+
+<image xlink:href="./img/aceitunas.png" width="40" height="40" x="-20" y="-20">
+    <animateMotion dur="15s" repeatCount="indefinite">
+        <mpath xlink:href="#p_pina"/>
+    </animateMotion>
+</image>
+
+<image xlink:href="./img/queso.png" width="90" height="90" x="-45" y="-45">
+    <animateMotion dur="19s" repeatCount="indefinite">
+        <mpath xlink:href="#p_pina"/>
+    </animateMotion>
+</image>
+
+<image xlink:href="./img/queso.png" width="90" height="90" x="-45" y="-45">
+    <animateMotion dur="19s" repeatCount="indefinite">
+        <mpath xlink:href="#p_aceitunas"/>
+    </animateMotion>
+</image>
+
+<image xlink:href="./img/queso.png" width="90" height="90" x="-45" y="-45">
+    <animateMotion dur="9s" repeatCount="indefinite">
+        <mpath xlink:href="#p_champinones"/>
+    </animateMotion>
+</image>
+
+<image xlink:href="./img/albahaca.png" width="30" height="30" x="-15" y="-15">
+    <animateMotion dur="12s" repeatCount="indefinite">
+        <mpath xlink:href="#p_pina"/>
+    </animateMotion>
+</image>
+
+<image xlink:href="./img/albahaca.png" width="30" height="30" x="-15" y="-15">
+    <animateMotion dur="17s" repeatCount="indefinite">
+        <mpath xlink:href="#p_champinones"/>
+    </animateMotion>
+</image>
+
+<image xlink:href="./img/cebolla.png" width="60" height="60" x="-30" y="-30">
+    <animateMotion dur="6s" repeatCount="indefinite">
+        <mpath xlink:href="#p_pina"/>
+    </animateMotion>
+</image>
+
+
+
+</svg>

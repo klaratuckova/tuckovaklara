@@ -1,0 +1,226 @@
+/* Not necesary if you linked normalize.css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+/* If you work with REMS 62.5% is equal to 10px in most browsers - 1REM = 10px, 1.6REM = 16px*/
+html {
+    font-size: 62.5%;
+  }
+
+/* Personal typography */
+@font-face{ 
+    font-family: "fuzzy"; /*The name you will use in your doc.css */
+    src: url(FuzzyBubbles-Bold.ttf); /* Usually in the foder of css*/
+}
+
+@font-face{ 
+    font-family: "nunito"; /*The name you will use in your doc.css */
+    src: url(Nunito-Regular.ttf); /* Usually in the foder of css*/
+}
+
+p{
+    font-family: "nunito"; /* The name you have assigned */
+    font-size: 1.8rem;
+}
+
+ul{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    font-family: "nunito"; /* The name you have assigned */
+    font-size: 1.8rem;
+}
+
+h1{
+    font-family: "fuzzy";
+    font-size: 5rem;
+}
+
+h2{
+    font-family: "fuzzy";
+    font-size: 3rem;
+}
+
+h3{
+    font-family: "fuzzy";
+    font-size: 2.5rem;
+}
+
+.btn_principal{
+    color: white;
+    background-color: olive;
+    text-decoration: none;
+    padding: 1rem 6rem;
+    font-size: 1.8rem;
+    font-family: "nunito";
+    border-radius: 3rem;
+    transition: ease .5s;
+}
+
+.btn_principal:hover{
+    color: white;
+    background-color: rgb(213, 213, 13);
+}
+
+.olive{
+    color: olive;
+}
+
+.yellow{
+    color: #FFDD12;
+}
+
+
+/* NAVBAR */
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+    background-color: white !important;
+    z-index: 99;
+    -webkit-box-shadow: 5px 5px 12px -2px rgba(0,0,0,0.26); 
+    box-shadow: 5px 5px 12px -2px rgba(0,0,0,0.26);
+}
+
+.navbar{
+    background-color: white !important;
+    
+}
+
+.nav-item a{
+    font-family: "fuzzy";
+    font-size: 1.8rem;
+    color: olive !important;
+}
+
+.nav-item a:hover{
+    color: #A6442E !important;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    padding-right: 30px;
+    padding-bottom: 20px;
+}
+
+
+/* YOUR STYLES */
+.intro{
+    height: 100vh;
+    background-image: url(../img/intro.jpg);
+    background-size: cover;
+    background-repeat: none;
+    background-position: center center;
+    padding-left: 15rem;
+}
+
+
+.intro h1{
+    color: white;
+    margin-bottom: 1rem;
+    padding-top: 15rem;
+}
+
+.intro h2{
+    color: white
+}
+ .intro p{
+     color: white;
+     margin-top: 2rem;
+     margin-bottom: 5rem;
+ }
+
+.container_ingredientes{
+    background-image: url(../img/ingredience.jpg);
+    background-position: center center;
+    background-repeat: none;
+    background-attachment: fixed;
+}
+
+.ingredientes{
+    text-align: center;
+    padding-top: 8rem;
+     padding-bottom: 8rem;
+     color: white;
+}
+
+.ingredientes h1{
+    margin-bottom: 1rem;
+}
+
+.container_ingredientes2{
+    background-image: url(../img/ingredience.jpg);
+    background-position: center center;
+    background-repeat: none;
+    background-attachment: fixed;
+    margin-top: -5px;
+}
+
+#mindmap{
+    font-family: "fuzzy";
+    font-size: 1rem;
+}
+
+.map_container{
+    height: 500px;
+}
+
+.masa_container{
+    text-align: center;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background-image: url(../img/mesa.jpg);
+    background-position: center center;
+    background-repeat: none;
+    background-size: cover;
+    color: white;
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+
+.pizza_svg{
+    padding-top: 8rem;
+    text-align: center;
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+
+.pizza_svg h2{
+    padding-bottom: 4rem;
+}
+
+.masa_container p{
+    margin-bottom: 3rem;
+}
+
+
+
+/*Media Queris 2022*/
+/* Large devices (desktops, less than 2000px) */
+@media only screen and (max-width: 2000px) { 
+}
+
+/* Medium devices (tablets, less than 1200px)*/
+@media only screen and (max-width: 1200px) {
+
+}
+
+/* Medium devices (tablets, less than 992px)*/
+@media only screen and (max-width: 992px) {
+
+}
+/* Small devices (landscape phones, less than 768px) */
+@media only screen and (max-width: 768px) {
+    
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media only screen and (max-width: 576px) {
+    
+}
+
+/* Extra Extra small devices (portrait phones, less than 480px) */
+@media only screen and (max-width: 480px) {
+    
+}
