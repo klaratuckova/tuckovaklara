@@ -1,0 +1,22 @@
+body{
+background-color: rgb(11, 0, 62);
+color: rgb(247, 247, 247);
+font-family: Verdana, Arial, Sans-serif;
+}
+h1{
+text-align: center;
+font-size: 32px;
+color: rgb(110, 214, 255);
+}
+.contenedor{
+width: 800px;
+margin: auto;
+text-align: justify;
+}
+
+
+
+.parallax-viewport{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
