@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animación de Sprite Sheet - tarea</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        h1{
+            text-align: center;
+        }
+        .animar{
+            margin: auto;
+            margin-bottom: 50px;
+            width: 571.3075px;
+            height: 338.2409px;
+            border: 3px solid black;
+            background-image: url(./sprites/ninja.jpg);
+        }
+        .animar:hover{
+            animation: mEquis 1.5s steps(15) infinite;
+            cursor:pointer;
+        }
+
+        @keyframes mEquis {
+            100%{
+                background-position-x: -8647px;
+            }
+        }
+            .muybridge{
+                margin: auto;
+                width: 81.0251px;
+                height: 37.631px;
+                border: 3px solid black;
+                background-image: url(./sprites/cat.jpg);
+            }
+
+            .muybridge:hover{
+                animation: mEquis2 1s steps(12) infinite;
+                cursor: pointer;
+            }
+
+            @keyframes mEquis2 {
+                100%{
+                    background-position-x: -975px ;
+                }
+                
+            }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Animación CSS</h1>
+    <div class="animar"></div>
+
+    <div class="muybridge"></div>
+</body>
+</html>
