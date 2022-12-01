@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Phaser - Personaje</title>
+    <script src="//cdn.jsdelivr.net/npm/phaser@3.24.1/dist/phaser.min.js"></script>
+</head>
+
+<body>
+    <div id="juego"></div>
+
+    <script>
+        const phaserConfig = {
+            type: Phaser.AUTO,
+            parent: "juego",
+            width: 1152,
+            height: 256,
+            physics: {
+                default: 'arcade',
+                arcade: {
+                    gravity: { y: 300 },
+                    debug: false
+                }
+            },
+            backgroundColor: "#1B4F72",
+            scene: {
+                preload: precargar,
+                create: crear,
+                update: actualizar
+            }
+        };
+
+        const juego = new Phaser.Game(phaserConfig);
+
+        var capaUno, capaDos, capaTres, cursores, personaje;
+
+        //Precarga
+        function precargar() {
+            this.load.image("capa-3", "fondos/fondo1.png");
+            this.load.image("capa-2", "fondos/fondo2.png");
+            // Agregamos el spritesheet de un personaje
+            this.load.spritesheet('heroe', 'sprites/man2.png', { frameWidth: 98, frameHeight: 169.4151 });
+
+            this.load.image("capa-1", "fondos/fondo3.png");
+            
+        }
+
+        //Crear
+        function crear() {
+            capaTres = this.add.tileSprite(576, 128, 1152, 256, "capa-3");
+            capaDos = this.add.tileSprite(576, 128, 1152, 256, "capa-2");
+            // -------------------------------------------------------------------
+            // Agregamos el personaje al centro de la escena
+            personaje = this.physics.add.sprite(576, 50, 'heroe');
+            
+            capaUno = this.add.tileSprite(576, 128, 1152, 256, "capa-1");
+
+            
+
+            //  Propiedades físicas del personaje. Al caer tendrá un ligero rebote.
+            personaje.setBounce(0.2);
+            personaje.setCollideWorldBounds(true);
+
+            //Las animaciones del personaje
+            this.anims.create({
+                key: 'der',
+                frames: this.anims.generateFrameNumbers('heroe',
+                { start: 1, end: 8 }),
+                frameRate: 10,
+                repeat: -1
+            });
+
+            this.anims.create({
+                key: 'izq',
+                frames: this.anims.generateFrameNumbers('heroe',
+                { start: 9, end: 16 }),
+                frameRate: 10,
+                repeat: -1
+            });
+
+            this.anims.create({
+                key: 'reposo',
+                frames: [{ key: 'heroe', frame: 0 }],
+                frameRate: 10
+            });
+
+            // Activar flechas de teclado
+            cursores = this.input.keyboard.createCursorKeys();
+        }
+
+        //Actualizar
+        function actualizar() {
+            if(cursores.right.isDown){
+                capaTres.tilePositionX += 0.35;
+                capaDos.tilePositionX += 0.45;
+                capaUno.tilePositionX += 0.65;
+                //personaje
+                personaje.anims.play('der', true);
+            }
+            else if(cursores.left.isDown){
+                capaTres.tilePositionX -= 0.35;
+                capaDos.tilePositionX -= 0.45;
+                capaUno.tilePositionX -= 0.65;
+                //personaje
+                personaje.anims.play('izq', true);
+
+            }
+            else{
+                //personaje
+                personaje.anims.play('reposo');
+            }
+
+
+        }
+
+
+        // //https://www.freepik.es/vector-gratis/marco-secuencia-animacion-caminata-hombre-juego-etapas-ciclo-adolescente-africano-caminando-hoja-sprite-movimiento-peatonal-hoja-sprite-movimiento-peatonal-transeunte-ilustracion-arte-linea-vectorial-plana-dibujos-animados_26177951.htm#query=sprite%20sheet%20person&position=3&from_view=search&track=sph
+
+        //https://www.freepik.es/vector-gratis/secuencia-ciclo-caminata-mujer-crear-animacion-juegos-marco-fotos-adolescente-que-usa-auriculares-caminando-mochila-movimiento-turistico-transeuntes-ilustracion-arte-linea-vectorial-plana-dibujos-animados_25135705.htm#query=walking%20animation&position=1&from_view=search&track=sph
+
+
+    </script>
+</body>
+
+</html>
+

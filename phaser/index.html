@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Phaser - Mover Capas</title>
+    <script src="//cdn.jsdelivr.net/npm/phaser@3.24.1/dist/phaser.min.js"></script>
+</head>
+
+<body>
+    <div id="juego"></div>
+
+    <script>
+        const phaserConfig = {
+            type: Phaser.AUTO,
+            parent: "juego",
+            width: 1152,
+            height: 256,
+            backgroundColor: "#1B4F72",
+            scene: {
+                preload: precargar,
+                create: crear,
+                update: actualizar
+            }
+        };
+
+        const juego = new Phaser.Game(phaserConfig);
+
+        function precargar() {
+            this.load.image("capa-3", "fondos/layer-3.png");
+            this.load.image("capa-2", "fondos/layer-2.png");
+            this.load.image("capa-1", "fondos/layer-1.png");
+        }
+        function crear() {
+            capaTres = this.add.tileSprite(576, 128, 1152, 256, "capa-3");
+            capaDos = this.add.tileSprite(576, 128, 1152, 256, "capa-2");
+            capaUno = this.add.tileSprite(576, 128, 1152, 256, "capa-1");
+        }
+        function actualizar() {
+            capaTres.tilePositionX += 0.25;
+            capaDos.tilePositionX += 0.35;
+            capaUno.tilePositionX += 0.55;
+        }
+    </script>
+</body>
+
+</html>
