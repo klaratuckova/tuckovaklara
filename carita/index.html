@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Carita</title>
+		<script type='text/javascript' src='https:/www.x3dom.org/download/x3dom.js'></script> 
+		<link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'>
+        <link rel="stylesheet" href="css/estilos.css">
+	</head>
+	<body>
+
+        <x3d>
+            <scene>
+
+                 <Inline url='carita1.x3d'></Inline>
+                <transform DEF='Carita' rotation='1 0 1 -0.4'>
+
+                    
+                   
+
+                    <transform DEF='Star1' rotation='1 0 1 -0.4'>
+                        <!--star1-->
+                        <transform translation="-3 0 -1" scale="0.1 0.1 0.1">
+                            <Inline url='star.x3d'></Inline>
+                        </transform>
+
+                        <timeSensor DEF='timer_star1' cycleInterval='4' loop='true'></timeSensor>
+                        <orientationInterpolator DEF='rotator_star1' key='0 0.5 1' keyValue='0 1 0 0 0 1 0 3.14 0 1 0 6.28'>
+                        </orientationInterpolator>
+                    </transform>
+
+                    <transform DEF='Star2' rotation='1 0 1 -0.4'>
+                        <!--star2-->
+                        <transform translation="4 0 2" scale="0.02 0.02 0.02">
+                            <Inline url='star.x3d'></Inline>
+                        </transform>
+                                                  
+                        <timeSensor DEF='timer_star2' cycleInterval='3' loop='true'></timeSensor>
+                        <orientationInterpolator DEF='rotator_star2' key='0 0.5 1' keyValue='0 1 0 0 0 1 0 3.14 0 1 0 6.28'>
+                        </orientationInterpolator>
+                    </transform>               
+                
+                    <transform DEF='Star3' rotation='1 0 1 -0.4'>
+                        <!--star3-->
+                        <transform translation="-5 0 -2" scale="0.03 0.03 0.03">
+                            <Inline url='star.x3d'></Inline>
+                        </transform>
+
+                        <timeSensor DEF='timer_star3' cycleInterval='5' loop='true'></timeSensor>
+                        <orientationInterpolator DEF='rotator_star3' key='0 0.5 1' keyValue='0 1 0 0 0 1 0 3.14 0 1 0 6.28'>
+                        </orientationInterpolator>
+                    </transform>
+                            
+                    <transform DEF='Star4' rotation='1 0 1 -0.4'>
+                         <!--star4-->
+                        <transform translation="-6 0 4" scale="0.01 0.01 0.01">
+                            <Inline url='star.x3d'></Inline>
+                        </transform>
+
+                        <timeSensor DEF='timer_star4' cycleInterval='4' loop='true'></timeSensor>
+                        <orientationInterpolator DEF='rotator_star4' key='0 0.5 1' keyValue='0 1 0 0 0 1 0 3.14 0 1 0 6.28'>
+                        </orientationInterpolator>
+                    </transform>
+                       
+                    <transform DEF='Stars' rotation='1 0 1 -0.4'>
+                        <!--star5-->
+                        <transform translation="8 0 3" scale="0.04 0.04 0.04">
+                            <Inline url='star.x3d'></Inline>
+                        </transform>
+                        
+                        <!--star6-->
+                        <transform translation="10 0 0" scale="0.05 0.05 0.05">
+                            <Inline url='star.x3d'></Inline>
+                        </transform>
+                        
+                        <!--star7-->
+                        <transform translation="-11 0 6" scale="0.03 0.03 0.03">
+                            <Inline url='star.x3d'></Inline>
+                        </transform>
+                        
+                        <!--star8-->
+                        <transform translation="12 0 -6" scale="0.01 0.01 0.01">
+                            <Inline url='star.x3d'></Inline>
+                        </transform>
+                    
+                    
+
+                    <timeSensor DEF='timer' cycleInterval='15' loop='true'></timeSensor>
+                    <orientationInterpolator DEF='rotator' key='0 0.5 1' keyValue='0 1 0 0 0 1 0 3.14 0 1 0 6.28'>
+                    </orientationInterpolator>
+                </transform>
+
+                <ROUTE fromNode='timer' fromField='fraction_changed' toNode='rotator' toField='set_fraction'></ROUTE>
+                <ROUTE fromNode='rotator' fromField='value_changed' toNode='Carita' toField='set_rotation'></ROUTE>
+
+            </scene>
+        </x3d>
+
+      
+	</body>
+</html>
+
+
+ 
+    
+
+<!--
+<transform DEF='SSolar' rotation='1 0 1 -0.4'>
+.
+.
+.
+
+<timeSensor DEF='timer' cycleInterval='60' loop='true'></timeSensor>
+        <orientationInterpolator DEF='rotator' key='0 0.5 1' keyValue='0(x) 1(y) 0(z) 0(rotacion-radianes) 0 1 0 (360grados) 3.14 0 1 0 6.28'>
+        </orientationInterpolator>
+      </transform>
+      <ROUTE fromNode='timer' fromField='fraction_changed' toNode='rotator' toField='set_fraction'></ROUTE>
+      <ROUTE fromNode='rotator' fromField='value_changed' toNode='SSolar' toField='set_rotation'></ROUTE>
+    -->

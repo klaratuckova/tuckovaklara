@@ -1,0 +1,7 @@
+body{
+    margin: auto;
+    /*background-color: black;*/
+    background-image:url("../rainbow_bckg.jpg");
+    background-size: cover; /*Se asegurará de que toda la imagen se muestre en el fondo sin recortar nada.*/
+
+   };
